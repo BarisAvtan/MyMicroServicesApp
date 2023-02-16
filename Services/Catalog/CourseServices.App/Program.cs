@@ -1,4 +1,5 @@
-﻿using CourseServices.Catalog.Settings;
+﻿using CourseServices.Catalog.Services;
+using CourseServices.Catalog.Settings;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,9 @@ builder.Services.AddSingleton<IDatabaseSettings>(serviceProvider =>//herhangi bi
 {//bu yönteme options pattern denir.
     return serviceProvider.GetRequiredService<IOptions<DatabaseSettings>>().Value;
 });
+builder.Services.AddScoped<ICategoryServices,CategoryService>();
+
+builder.Services.AddScoped<ICourseService, CourseService>();
 
 //**Baris**//
 

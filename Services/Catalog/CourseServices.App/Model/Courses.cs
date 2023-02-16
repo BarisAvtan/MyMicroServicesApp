@@ -3,7 +3,7 @@ using MongoDB.Bson;
 
 namespace CourseServices.Catalog.Model
 {
-    public class Course
+    public class Courses
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]//Id string olduğu için BsonRepresentation ile id yi string olarak verecek,id string gönderildiğinde ise bunu object id'e dönüştürecek
