@@ -20,7 +20,8 @@ namespace Course.Shared.Dtos
         //Static Factory Method
         public static Response<T> Success(T data, int statusCode)
         {
-            return new ResponseDto<T> { Data = data, StatusCode = statusCode, IsSuccessful = true };
+            //return new ResponseDto<T> { Data = data, StatusCode = statusCode, IsSuccessful = true };
+            return new Response<T> { Data = data, StatusCode = statusCode, IsSuccessful = true };
         }
         public static Response<T> Success(int statusCode)
         {
