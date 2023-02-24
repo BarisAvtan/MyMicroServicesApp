@@ -3,7 +3,7 @@ using CourseServices.Catalog.Dtos;
 
 namespace CourseServices.Catalog.Services
 {
-     interface ICourseService
+    public interface ICourseService
     {
 
         Task<Response<List<CourseDto>>> GetAllAsync();

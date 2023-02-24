@@ -4,7 +4,7 @@ using CourseServices.Catalog.Model;
 
 namespace CourseServices.Catalog.Services
 {
-    internal interface ICategoryServices
+    public interface ICategoryServices
     {
         Task<Response<List<CategoryDto>>> GetAllAsync();
         Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto);

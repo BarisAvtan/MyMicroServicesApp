@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace CourseServices.Catalog.Services
 {
-    internal class CourseService : ICourseService
+    public class CourseService : ICourseService
     {
         private readonly IMongoCollection<Courses> _courseCollection;
 
@@ -18,8 +18,11 @@ namespace CourseServices.Catalog.Services
         public CourseService(IMapper mapper, IDatabaseSettings databaseSettings)
         {
             var client = new MongoClient(databaseSettings.ConnectionString);
-            var database = client.GetDatabase(databaseSettings.ConnectionString);
+
+            var database = client.GetDatabase(databaseSettings.DatabaseName);
+
             _courseCollection = database.GetCollection<Courses>(databaseSettings.CourseCollectionName);
+
             _categoryCollection = database.GetCollection<Category>(databaseSettings.CategoryCollectionName);
             _mapper = mapper;
         }

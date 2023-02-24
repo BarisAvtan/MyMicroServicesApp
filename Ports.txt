@@ -1,8 +1,11 @@
 ﻿Services
 -CatalogAPI => 5011  (http://localhost:5011)
+http://localhost:5011/swagger/index.html
 
 --Docker işlemleri
+portainer komut satırı kullanmadan docker yönetim işlemeri için kullanılır.
 -https://docs.portainer.io/start/install/server/docker/linux
 cmd => 1=>  docker volume create portainer_data
 cmd => 2=>  docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:latest
 --https://localhost:9443/#!/init/admin
+--admin => password12**

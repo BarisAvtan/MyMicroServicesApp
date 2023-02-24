@@ -3,7 +3,7 @@ using MongoDB.Bson;
 
 namespace CourseServices.Catalog.Dtos
 {
-    internal class CourseDto
+    public class CourseDto
     { 
         public string Id { get; set; }
 
