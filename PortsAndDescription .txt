@@ -9,3 +9,11 @@ cmd => 1=>  docker volume create portainer_data
 cmd => 2=>  docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:latest
 --https://localhost:9443/#!/init/admin
 --admin => password12**
+
+--identiy server
+
+Adds a basic IdentityServer that uses ASP.NET Identity for user management. 
+If you automatically seed the database, you will get two users: alice and bob - both with password Pass123$. Check the SeedData.cs file.
+powershell => dotnet new -i identityserver4.templates
+powershell =>  dotnet new is4aspid --name Course.IdentityServer
+
