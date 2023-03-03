@@ -11,7 +11,7 @@ cmd => 2=>  docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=a
 --admin => password12**
 
 --identiy server
-
+https://github.com/IdentityServer/IdentityServer4.Templates
 Adds a basic IdentityServer that uses ASP.NET Identity for user management. 
 If you automatically seed the database, you will get two users: alice and bob - both with password Pass123$. Check the SeedData.cs file.
 powershell => dotnet new -i identityserver4.templates
