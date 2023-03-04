@@ -22,6 +22,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.IdentityServer", "IdentityServer\Course.IdentityServer\Course.IdentityServer.csproj", "{18C1FF86-C88D-4A17-86D2-517524BC409F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{0E936247-0C68-414A-A867-95CD9FEAEDAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Services.PhotoStock", "Services\PotoStock\Course.Services.PhotoStock\Course.Services.PhotoStock.csproj", "{22BA49F3-C5B4-4D20-868F-554C4086D4AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{0226D10B-EFFB-4B95-B15A-F1333E0F96CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +46,10 @@ Global
 		{18C1FF86-C88D-4A17-86D2-517524BC409F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18C1FF86-C88D-4A17-86D2-517524BC409F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18C1FF86-C88D-4A17-86D2-517524BC409F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22BA49F3-C5B4-4D20-868F-554C4086D4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BA49F3-C5B4-4D20-868F-554C4086D4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BA49F3-C5B4-4D20-868F-554C4086D4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BA49F3-C5B4-4D20-868F-554C4086D4AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +59,9 @@ Global
 		{5608574C-628B-48CA-B7D6-509BF344C760} = {BE7CCAD5-6F06-4D01-8E00-C266025EFD53}
 		{8162240C-E29B-4520-ADC3-50E14ABDD47B} = {F4AF95D2-1A14-4227-85DB-35EE11A6FDCF}
 		{18C1FF86-C88D-4A17-86D2-517524BC409F} = {1452D6E4-D844-43FB-AD4F-9F738C2FA1DF}
+		{0E936247-0C68-414A-A867-95CD9FEAEDAE} = {4DEC9091-F20E-4D0E-A714-7F8B5511667F}
+		{22BA49F3-C5B4-4D20-868F-554C4086D4AF} = {0E936247-0C68-414A-A867-95CD9FEAEDAE}
+		{0226D10B-EFFB-4B95-B15A-F1333E0F96CC} = {0E936247-0C68-414A-A867-95CD9FEAEDAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F9C144B-0F6A-4BE8-8CCD-F2E4B0C5F14C}
