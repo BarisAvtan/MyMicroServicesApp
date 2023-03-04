@@ -15,6 +15,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStaticFiles();//dosyalara public olarak eri?ebilmek için
 
 app.UseAuthorization();
 
