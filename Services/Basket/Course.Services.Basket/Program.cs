@@ -1,7 +1,5 @@
-using FreeCourse.Services.Basket.Services;
-using FreeCourse.Services.Basket.Settings;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+using Course.Services.Basket.Services;
+using Course.Services.Basket.Settings;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);

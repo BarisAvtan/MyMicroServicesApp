@@ -1,8 +1,8 @@
-﻿using Course.Shared.Dtos;
-using FreeCourse.Services.Basket.Dtos;
+﻿using Course.Services.Basket.Dtos;
+using Course.Shared.Dtos;
 using System.Text.Json;
 
-namespace FreeCourse.Services.Basket.Services
+namespace Course.Services.Basket.Services
 {
     public class BasketService : IBasketService
     {
@@ -36,6 +36,21 @@ namespace FreeCourse.Services.Basket.Services
             var status = await _redisService.GetDb().StringSetAsync(basketDto.UserId, JsonSerializer.Serialize(basketDto));
 
             return status ? Response<bool>.Success(204) : Response<bool>.Fail("Basket could not update or save", 500);
+        }
+
+        Task<Response<bool>> IBasketService.Delete(string userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Response<BasketDto>> IBasketService.GetBasket(string userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Response<bool>> IBasketService.SaveOrUpdate(BasketDto basketDto)
+        {
+            throw new NotImplementedException();
         }
     }
 }

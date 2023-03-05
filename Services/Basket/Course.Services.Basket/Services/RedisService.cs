@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FreeCourse.Services.Basket.Services
+namespace Course.Services.Basket.Services
 {
     public class RedisService
     {

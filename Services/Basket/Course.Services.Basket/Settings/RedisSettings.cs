@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FreeCourse.Services.Basket.Settings
+namespace Course.Services.Basket.Settings
 {
     public class RedisSettings
     {

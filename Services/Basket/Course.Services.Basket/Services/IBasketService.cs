@@ -1,11 +1,7 @@
-﻿using Course.Shared.Dtos;
-using FreeCourse.Services.Basket.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Course.Services.Basket.Dtos;
+using Course.Shared.Dtos;
 
-namespace FreeCourse.Services.Basket.Services
+namespace Course.Services.Basket.Services
 {
     public interface IBasketService
     {
