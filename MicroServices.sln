@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseServices.Catalog", "S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67C252E2-6415-4480-B37C-6ED51F216E7F}"
 	ProjectSection(SolutionItems) = preProject
-		PortsAndDescription .txt = PortsAndDescription .txt
+		PortsAndDescriptions .txt = PortsAndDescriptions .txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{F4AF95D2-1A14-4227-85DB-35EE11A6FDCF}"
@@ -24,7 +24,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.IdentityServer", "Id
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{0E936247-0C68-414A-A867-95CD9FEAEDAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Services.PhotoStock", "Services\PotoStock\Course.Services.PhotoStock\Course.Services.PhotoStock.csproj", "{22BA49F3-C5B4-4D20-868F-554C4086D4AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.Services.PhotoStock", "Services\PotoStock\Course.Services.PhotoStock\Course.Services.PhotoStock.csproj", "{22BA49F3-C5B4-4D20-868F-554C4086D4AF}"
+<<<<<<< HEAD
+=======
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{6035CC69-9AA6-471B-97A9-A1EE2371BFAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.Services.Basket", "Services\Basket\Course.Services.Basket\Course.Services.Basket.csproj", "{0B3012DC-BCCB-4E39-AF78-F92829FC3E3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{F67ABAE8-AADA-4F8B-83FC-4388E7A526A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Services.Discount", "Services\Discount\Course.Services.Discount\Course.Services.Discount.csproj", "{FC48939F-CEEE-40FA-B4BA-93F6E234A6DD}"
+>>>>>>> myProject_Redis
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +59,14 @@ Global
 		{22BA49F3-C5B4-4D20-868F-554C4086D4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22BA49F3-C5B4-4D20-868F-554C4086D4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22BA49F3-C5B4-4D20-868F-554C4086D4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3012DC-BCCB-4E39-AF78-F92829FC3E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3012DC-BCCB-4E39-AF78-F92829FC3E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3012DC-BCCB-4E39-AF78-F92829FC3E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3012DC-BCCB-4E39-AF78-F92829FC3E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC48939F-CEEE-40FA-B4BA-93F6E234A6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC48939F-CEEE-40FA-B4BA-93F6E234A6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC48939F-CEEE-40FA-B4BA-93F6E234A6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC48939F-CEEE-40FA-B4BA-93F6E234A6DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +78,10 @@ Global
 		{18C1FF86-C88D-4A17-86D2-517524BC409F} = {1452D6E4-D844-43FB-AD4F-9F738C2FA1DF}
 		{0E936247-0C68-414A-A867-95CD9FEAEDAE} = {4DEC9091-F20E-4D0E-A714-7F8B5511667F}
 		{22BA49F3-C5B4-4D20-868F-554C4086D4AF} = {0E936247-0C68-414A-A867-95CD9FEAEDAE}
+		{6035CC69-9AA6-471B-97A9-A1EE2371BFAA} = {4DEC9091-F20E-4D0E-A714-7F8B5511667F}
+		{0B3012DC-BCCB-4E39-AF78-F92829FC3E3B} = {6035CC69-9AA6-471B-97A9-A1EE2371BFAA}
+		{F67ABAE8-AADA-4F8B-83FC-4388E7A526A9} = {4DEC9091-F20E-4D0E-A714-7F8B5511667F}
+		{FC48939F-CEEE-40FA-B4BA-93F6E234A6DD} = {F67ABAE8-AADA-4F8B-83FC-4388E7A526A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F9C144B-0F6A-4BE8-8CCD-F2E4B0C5F14C}
