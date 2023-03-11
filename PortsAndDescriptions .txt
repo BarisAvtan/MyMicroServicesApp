@@ -4,7 +4,8 @@ http://localhost:5011/swagger/index.html
 --identiy server localhost => 5001
 
 --PhotoStockAPI => 5012
-
+--BasketApı => 5013
+--Discount =>5014 //install dapper.contrip and install npgsql(postgre)
 
 --Docker işlemleri
 portainer komut satırı kullanmadan docker yönetim işlemeri için kullanılır.
@@ -21,5 +22,6 @@ If you automatically seed the database, you will get two users: alice and bob - 
 powershell => dotnet new -i identityserver4.templates
 powershell =>  dotnet new is4aspid --name Course.IdentityServer
 
----
+-----BasketApi
+nugeet install  => StackExchange.Redis 
 
