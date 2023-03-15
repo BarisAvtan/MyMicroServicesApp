@@ -6,6 +6,8 @@ http://localhost:5011/swagger/index.html
 --PhotoStockAPI => 5012
 --BasketApı => 5013
 --Discount =>5014 //install dapper.contrip and install npgsql(postgre)
+--OrderAPI  =>5015
+--FakepaymetApi => 5016
 
 --Docker işlemleri
 portainer komut satırı kullanmadan docker yönetim işlemeri için kullanılır.
