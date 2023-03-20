@@ -27,3 +27,4 @@ powershell =>  dotnet new is4aspid --name Course.IdentityServer
 -----BasketApi
 nugeet install  => StackExchange.Redis 
 
+--rabbir mq power shell > docker run -d -p 15672:15672 -p5672:5672 --name rabbitmqcontainer rabbitmq:3.11.10-management

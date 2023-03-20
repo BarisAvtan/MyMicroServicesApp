@@ -58,6 +58,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Web", "Frontends\Course.Web\Course.Web.csproj", "{9167BE7C-D2ED-4E99-B9B4-0BDC1AECCD9D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messages", "Messages", "{7CFCE0DE-D515-4F69-B9D9-0DA1B85BCEB0}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\baris.avtan\Desktop\msTest\UdemyMicroservices-master\UdemyMicroservices-master\Shared\FreeCourse.Shared\Messages\CourseNameChangedEvent.cs = C:\Users\baris.avtan\Desktop\msTest\UdemyMicroservices-master\UdemyMicroservices-master\Shared\FreeCourse.Shared\Messages\CourseNameChangedEvent.cs
+		C:\Users\baris.avtan\Desktop\msTest\UdemyMicroservices-master\UdemyMicroservices-master\Shared\FreeCourse.Shared\Messages\CreateOrderMessageCommand.cs = C:\Users\baris.avtan\Desktop\msTest\UdemyMicroservices-master\UdemyMicroservices-master\Shared\FreeCourse.Shared\Messages\CreateOrderMessageCommand.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +151,7 @@ Global
 		{93BBE7F2-A816-4F8E-9B80-41A961589488} = {0645EB02-7090-4660-AC11-F89DB1FD504D}
 		{55E460BF-CD56-4B5B-AC78-C70B6FACF297} = {17B5270F-A2BB-4CF7-B9C7-A72ADCC06C2D}
 		{9167BE7C-D2ED-4E99-B9B4-0BDC1AECCD9D} = {2421F255-2A57-4299-B149-98F10989F687}
+		{7CFCE0DE-D515-4F69-B9D9-0DA1B85BCEB0} = {F4AF95D2-1A14-4227-85DB-35EE11A6FDCF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F9C144B-0F6A-4BE8-8CCD-F2E4B0C5F14C}

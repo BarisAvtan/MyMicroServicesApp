@@ -1,4 +1,6 @@
-using Course.Services.Order.Infrastructure;
+﻿using Course.Services.Order.Infrastructure;
+using FreeCourse.Services.Order.Application.Consumers;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -18,6 +20,28 @@ builder.Services.AddDbContext<OrderDbContext>(opt =>
         configure.MigrationsAssembly("Course.Services.Order.Infrastructure");
     });
 });
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<CreateOrderMessageCommandConsumer>();
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        // Default Port : 5672
+        cfg.Host(builder.Configuration["RabbitMQUrl"], "/", host =>
+        {
+            host.Username("guest");
+            host.Password("guest");
+        });
+
+        cfg.ReceiveEndpoint("create-order-service", e =>//consumer 'ın okuyacagı endpoint
+        {
+            e.ConfigureConsumer<CreateOrderMessageCommandConsumer>(context);
+
+        });
+    });
+
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
